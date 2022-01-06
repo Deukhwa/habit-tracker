@@ -1,6 +1,11 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
-export default class Habit extends Component {
+export default class Habit extends PureComponent {
+  //Lifescycle functions
+  componentDidMount() {}
+
+  componentWillUnmount() {}
+
   handleIncrement = () => {
     this.props.onIncrement(this.props.habit)
   }

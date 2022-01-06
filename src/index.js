@@ -3,5 +3,12 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App.jsx'
 import '@fortawesome/fontawesome-free/js/all.js'
+import './components/simpleHabit.jsx'
+import SimpleHabit from './components/simpleHabit.jsx'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <React.StrictMode>
+    <SimpleHabit />
+  </React.StrictMode>,
+  document.getElementById('root')
+)
